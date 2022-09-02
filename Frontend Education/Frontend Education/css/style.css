@@ -1,0 +1,126 @@
+body {
+    background: #e8e8e8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(45, 255, 230, 0.6);
+    position: fixed;
+    padding: 0 20%;
+}
+
+header a {
+    font-size: 20px;
+    line-height: 0px;
+    font-family: 'Impact';
+    letter-spacing: 0.25em;
+    color: #787878;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 841px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 3px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.first-list {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.first-list li:first-child {
+    text-decoration: line-through;
+}
+
+.first-list li:nth-child(2) {
+    font-weight: 700;
+}
+
+.first-list li:nth-child(3) {
+    font-style: italic;
+}
+
+.first-list li:last-child {
+    text-transform: uppercase;
+}
+
+.second-list {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.second-list li:nth-child(2):hover {
+    color: #d55a5a;
+    background: url(/img/icons/check_icon_95.png) no-repeat;
+} 
+
+.list-element {
+    background: url(/img/icons/check_icon_37.png) no-repeat;
+    padding-left: 40px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #273d46;
+}
+
+.button {
+    width: 199px;
+    height: 44px;
+    box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+    border-radius: 22px;
+    background: #80b7b3;
+    margin-bottom: 124px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #3a5856;
+}
+
+.button:active {
+    background-color: #818181;
+}
+
+.input {
+    width: 294px;
+    height: 52px;
+    border: 1px solid #b0b0b0;
+    display: block;
+} 
+
+.input:focus {
+    width: 294px;
+    height: 52px;
+    border: 1px solid #7fbed5;
+    box-shadow: 0px 0px 20px -1px rgba(127, 190, 213, 0.93);
+}

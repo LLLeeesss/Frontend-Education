@@ -1,0 +1,362 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+/* HEADER */
+.navigation  {
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(file:///C:/Users/User/Desktop/Frontend%20Education/Wine%20market/preview.png), #EDEDED;
+    background-size: 1920px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+
+address {
+    width: 1222px;
+    display: flex;
+    justify-content: space-between;
+    height: 69px;
+    align-items: center;
+}
+
+.address {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.phone-number {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: #fff;
+}
+
+/* First screen */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.nav {
+    width: 300px;
+    height: 45px;
+    padding: 12px 109px;
+    box-sizing: border-box;
+    border-left: 1px solid #fff;
+    cursor: pointer;
+}
+
+.border-left {
+    border-left: none;
+}
+
+.buttons {
+    display: flex;
+    width: 415px;
+    justify-content: space-between;
+    margin-top: 583px;
+}
+
+.vine-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    background: #99862A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5;
+    color: inherit;
+    font-family: inherit;
+    width: 203px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.tasting {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    background: #99862A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: inherit;
+    font-family: inherit;
+    width: 182px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Site descr */
+.site-descr {
+    height: 856px;
+    background-color: #282828;
+    color: #fff;
+    padding: 100px 405px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.descr-box {
+    border: 3px solid #C4C4C4;
+    width: 1110px;
+    height: 656px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 187px;
+    box-sizing: border-box;
+}
+
+.descr-title {
+    margin: 0;
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 150%;
+    font-weight: 400;
+    width: 736px;
+    height: 54px;
+}
+
+.lines-site_descr {
+    width: 160px;
+    margin: 40px 0;
+}
+
+.descr-text {
+    margin: 0 0 50px 0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+
+/* Collection */
+.collection {
+    background: #E6E3C4;
+    margin: 0;
+    padding: 80px 405px;
+    color: #282828;
+}
+
+.wrapper {
+    width: 1110px;
+    display: flex;
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+
+.lines-side-collection {
+    height: 1px;
+    background-color: #998431;
+    border: none;
+    width: 1110px;
+    margin: 0;
+}
+
+article {
+    box-sizing: border-box;
+    margin: 0 125px 0 0;
+    width: 445px;
+}
+
+.list-row {
+    padding: 10px 0 15px 30px;
+}
+
+.list-row-date {
+    padding: 31px 24px 26px 18.5px;
+}
+
+.date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+
+}
+
+.collection-vine-name {
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0;
+}
+
+.collection-vine-descr {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 5px 0 0 0;
+}
+
+.novelty-collection {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+    font-family: 'Montserrat';
+    margin: 0;
+}
+
+.collection-title {
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 150%;
+    margin: 30px 0;
+}
+
+.line-collection {
+    background: #282828;
+    height: 1px;
+    border: none;
+    width: 160px;
+    margin: 0;
+}
+
+.collection-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: 'Montserrat';
+    margin: 30px 0;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    background: #99862A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 254px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Collection list border */
+table, tr, td {
+    border-spacing: 0px;
+    border: none;
+}
+
+.list-row {
+    border-bottom: 1px solid #282828;
+    width: 370px;
+}
+
+.list-row-date {
+    border-right: 1px solid #282828;
+    border-bottom: 1px solid #282828;
+}
+
+.bottom {
+    border-bottom: none;
+}
+
+/* Collection list images */
+figure {
+    margin: 0;
+    width: 540px;
+    height: 758px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.goblet-with-vine {
+    width: 540px;
+    height: 500px;
+    margin-bottom: auto;
+}
+
+.vine-bottles {
+    margin-right: 26px;
+}
+
+/* Testing */
+.testing {
+    background-color: #282828;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 131px 405px 98px 405px;
+}
+
+.testing-reg {
+    border: 3px solid #C4C4C4;
+}
+
+.grape-img {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    left: 375px;
+    top: 2854px;
+}
+
+.cask-img {
+    position: absolute;
+    width: 260px;
+    height: 200px;
+    left: 1308px;
+    top: 2858px;
+}
+
+.form_title {
+    position: absolute;
+    width: 490px;
+    height: 74px;
+    left: 715px;
+    top: 2884px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    background: #282828;
+}
+
+span {
+    width: 390px;
+    height: 54px;
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+}

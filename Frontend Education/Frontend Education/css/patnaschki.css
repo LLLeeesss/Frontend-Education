@@ -1,0 +1,461 @@
+body {
+  background: #e8e8e8;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+
+
+/* Шапка */
+
+header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: rgba(45, 255, 230, 0.6);
+  position: fixed;
+  padding: 0 20%;
+  z-index: 100;
+}
+
+header a {
+  font-size: 20px;
+  line-height: 0px;
+  font-family: 'Impact';
+  letter-spacing: 0.25em;
+  color: #787878;
+  text-transform: uppercase;
+  margin-right: 50px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Пятнашки на флексах */
+
+.flex {
+  padding-top: 100px;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: 'Impact';
+}
+
+.container {
+  padding: 20px 0 100px 0;
+}
+
+.box-flex {
+  max-width: 475px;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.5px;
+  margin: 0 auto;
+}
+
+.box__element_flex {
+  width: calc(178px / 2);
+  height: calc(178px / 2);
+  border-radius: 5px;
+  background: #5AB94B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5px;
+  transition: all 0.5s ease 0s;
+}
+
+.box__element_flex p {
+  font-size: 30px;
+  line-height: 0px;
+}
+
+.box__element_flex:hover {
+  transform: translate(94px, 0);
+}
+
+
+
+/* Пятнашки на position: absolute; */
+
+:root { --element_width: 89px; }
+:root { --element_hight: 89px; }
+
+
+
+
+
+
+.box_absolute {
+  width: 475px;
+  height: 475px;
+  background: #fff;
+  margin: 0 auto;
+  position: relative;
+}
+
+.box__element_absolute {
+  width: var(--element_width);
+  height: var(--element_hight);
+  border-radius: 5px;
+  background: #5AB94B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease 0s;
+}
+
+.box__element_absolute p {
+  font-size: 30px;
+  line-height: 0px;
+  cursor: default;
+}
+
+
+
+
+/* ПОЗИЦИОНИРОВАНИЕ */
+
+
+/* Переменные для позиционирования */
+/* Первая позиция */
+:root {
+  --position_1top: 5px;
+}
+:root {
+  --position_1left: 5px;
+}
+
+/* Вторая позиция */
+:root {
+  --position_2top: 5px;
+}
+:root {
+  --position_2left: calc(var(--element_width) + 10px);
+}
+
+/* Третяя позиция */
+:root {
+  --position_3top: 5px;
+}
+:root {
+  --position_3left: calc(var(--element_width) * 2 + 15px);
+}
+
+/* Чретвертая позиция */
+:root {
+  --position_4top: 5px;
+}
+:root {
+  --position_4left: calc(var(--element_width) * 3 + 20px);
+}
+
+/* Пятая позиция */
+:root {
+  --position_5top: 5px;
+}
+:root {
+  --position_5left: calc(var(--element_width) * 4 + 25px);
+}
+
+/* Шестая позиция */
+:root {
+  --position_6top: calc(var(--element_hight) + 10px);
+}
+:root {
+  --position_6left: 5px;
+}
+/* Седьмая позиция */
+:root {
+  --position_7top: calc(var(--element_hight) + 10px);
+}
+:root {
+  --position_7left: calc(var(--element_width) + 10px);
+}
+/* Восьмая позиция */
+:root {
+  --position_8top: calc(var(--element_hight) + 10px);
+}
+:root {
+  --position_8left: calc(var(--element_width) * 2 + 15px);
+}
+/* Девятатая позиция */
+:root {
+  --position_9top: calc(var(--element_hight) + 10px);
+}
+:root {
+  --position_9left: calc(var(--element_width) * 3 + 20px);
+}
+/* Десятая позиция */
+:root {
+  --position_10top: calc(var(--element_hight) + 10px);
+}
+:root {
+  --position_10left: calc(var(--element_width) * 4 + 25px);
+}
+/* Одинадцатая позиция */
+:root {
+  --position_11top: calc(var(--element_hight) * 2 + 15px);
+}
+:root {
+  --position_11left: 5px;
+}
+/* Двенадцатая позиция */
+:root {
+  --position_12top: calc(var(--element_hight) * 2 + 15px);
+}
+:root {
+  --position_12left: calc(var(--element_width) + 10px);
+}
+/* Тринадцатая позиция */
+:root {
+  --position_13top: calc(var(--element_hight) * 2 + 15px);
+}
+:root {
+  --position_13left: calc(var(--element_width) * 2 + 15px);
+}
+/* Четырнадцатая позиция */
+:root {
+  --position_14top: calc(var(--element_hight) * 2 + 15px);
+}
+:root {
+  --position_14left: calc(var(--element_width) * 3 + 20px);
+}
+/* Пятнадцая позиция */
+:root {
+  --position_15top: calc(var(--element_hight) * 2 + 15px);
+}
+:root {
+  --position_15left: calc(var(--element_width) * 4 + 25px);
+}
+/* Шестнадцая позиция */
+:root {
+  --position_16top: calc(var(--element_hight) * 3 + 20px);
+}
+:root {
+  --position_16left: 5px;
+}
+/* Семнадцая позиция */
+:root {
+  --position_17top: calc(var(--element_hight) * 3 + 20px);
+}
+:root {
+  --position_17left: calc(var(--element_width) + 10px);
+}
+/* Восемнадцатая позиция */
+:root {
+  --position_18top: calc(var(--element_hight) * 3 + 20px);
+}
+:root {
+  --position_18left: calc(var(--element_width) * 2 + 15px);
+}
+/* Девятнадцатая позиция */
+:root {
+  --position_19top: calc(var(--element_hight) * 3 + 20px);
+}
+:root {
+  --position_19left: calc(var(--element_width) * 3 + 20px);
+}
+/* Двадцатая позиция */
+:root {
+  --position_20top: calc(var(--element_hight) * 3 + 20px);
+}
+:root {
+  --position_20left: calc(var(--element_width) * 4 + 25px);
+}
+/* Двадцать первая позиция */
+:root {
+  --position_21top: calc(var(--element_hight) * 4 + 25px);
+}
+:root {
+  --position_21left: 5px;
+}
+/* Двадцать вторая позиция */
+:root {
+  --position_22top: calc(var(--element_hight) * 4 + 25px);
+}
+:root {
+  --position_22left: calc(var(--element_width) + 10px);
+}
+/* Двадцать третяя позиция */
+:root {
+  --position_23top: calc(var(--element_hight) * 4 + 25px);
+}
+:root {
+  --position_23left: calc(var(--element_width) * 2 + 15px);
+}
+/* Двадцать четвертая позиция */
+:root {
+  --position_24top: calc(var(--element_hight) * 4 + 25px);
+}
+:root {
+  --position_24left: calc(var(--element_width) * 3 + 20px);
+}
+/* Двадайать пятая позиция */
+:root {
+  --position_25top: calc(var(--element_hight) * 4 + 25px);
+}
+:root {
+  --position_25left: calc(var(--element_width) * 4 + 25px);
+}
+
+
+
+
+
+.box__element_absolute_1 {
+  position: absolute;
+  top: var(--position_1top);
+  left: var(--position_1left);
+}
+
+.box__element_absolute_2 {
+  position: absolute;
+  top: var(--position_2top);
+  left: var(--position_2left);
+}
+
+.box__element_absolute_3 {
+  position: absolute;
+  top: var(--position_3top);
+  left: var(--position_3left);
+}
+
+.box__element_absolute_4 {
+  position: absolute;
+  top: var(--position_4top);
+  left: var(--position_4left);
+}
+
+.box__element_absolute_5 {
+  position: absolute;
+  top: var(--position_5top);
+  left: var(--position_5left);
+}
+
+.box__element_absolute_6 {
+  position: absolute;
+  top: var(--position_6top);
+  left: var(--position_6left);
+}
+
+.box__element_absolute_7 {
+  position: absolute;
+  top: var(--position_7top);
+  left: var(--position_7left);
+}
+
+.box__element_absolute_8 {
+  position: absolute;
+  top: var(--position_8top);
+  left: var(--position_8left);
+}
+
+.box__element_absolute_9 {
+  position: absolute;
+  top: var(--position_9top);
+  left: var(--position_9left);
+}
+
+.box__element_absolute_10 {
+  position: absolute;
+  top: var(--position_10top);
+  left: var(--position_10left);
+}
+
+.box__element_absolute_11 {
+  position: absolute;
+  top: var(--position_11top);
+  left: var(--position_11left);
+}
+
+.box__element_absolute_12 {
+  position: absolute;
+  top: var(--position_12top);
+  left: var(--position_12left);
+}
+
+.box__element_absolute_13 {
+  position: absolute;
+  top: var(--position_13top);
+  left: var(--position_13left);
+}
+
+.box__element_absolute_14 {
+  position: absolute;
+  top: var(--position_14top);
+  left: var(--position_14left);
+}
+
+.box__element_absolute_15 {
+  position: absolute;
+  top: var(--position_15top);
+  left: var(--position_15left);
+}
+
+.box__element_absolute_16 {
+  position: absolute;
+  top: var(--position_16top);
+  left: var(--position_16left);
+}
+
+.box__element_absolute_17 {
+  position: absolute;
+  top: var(--position_17top);
+  left: var(--position_17left);
+}
+
+.box__element_absolute_18 {
+  position: absolute;
+  top: var(--position_18top);
+  left: var(--position_18left);
+}
+
+.box__element_absolute_19 {
+  position: absolute;
+  top: var(--position_19top);
+  left: var(--position_19left);
+}
+
+.box__element_absolute_20 {
+  position: absolute;
+  top: var(--position_20top);
+  left: var(--position_20left);
+}
+
+.box__element_absolute_21 {
+  position: absolute;
+  top: var(--position_21top);
+  left: var(--position_21left);
+}
+
+.box__element_absolute_22 {
+  position: absolute;
+  top: var(--position_22top);
+  left: var(--position_22left);
+}
+
+.box__element_absolute_23 {
+  position: absolute;
+  top: var(--position_23top);
+  left: var(--position_23left);
+}
+
+.box__element_absolute_24 {
+  position: absolute;
+  top: var(--position_24top);
+  left: var(--position_24left);
+}
+
+.box__element_absolute_25 {
+  position: absolute;
+  top: var(--position_25top);
+  left: var(--position_25left);
+}
